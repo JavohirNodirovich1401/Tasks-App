@@ -1,0 +1,251 @@
+body{
+    background-color: #FAF1F8;
+    transition: background-color 0.4s ease;
+}
+.head{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    margin-left: -8px;
+    margin-top: -8px;
+    position: fixed;
+    position: absolute;
+    display: flex;
+}
+.headbtn_01{
+    margin-left: 10px;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    margin-top: 3px;
+    background-color: white;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+.headsvg_01{
+    margin-top: 3px;
+}
+.headbtn_02{
+    margin-left: 1244px;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    margin-top: 4px;
+    background-color: white;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+.headsvg_02{
+    margin-top: 3px;
+}
+.headbtn_03{
+    margin-left: 10px;
+    border-radius: 8px;
+    width: 185px;
+    height: 36px;
+    margin-top: 4px;
+    background-color: #1E1E1E;
+    border: none;
+    color: white;
+    padding-left: 25px;
+    margin-top: 3.5px;
+    cursor: pointer;
+}
+.headsvg_03{
+    margin-top: -4px;
+    margin-left: -25px;
+    position: absolute;
+}
+.text{
+    position: absolute;
+    margin-left: 630px;
+    margin-top: 180px;
+}
+.text h1{
+    text-align: center;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+.text p{
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+.textbtn_01{
+    margin-left: 430px;
+    margin-top: -85px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
+.textbtn_01svg{
+    width: 19px;
+    margin-top: -2px;
+    margin-left: 5px;
+}
+.textbtn_02svg{
+    display: none;
+    margin-left: 2px;
+    margin-top: -1px;
+}
+.inputs{
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 420px;
+    width: 660px;
+    height: 140px;
+    background-color: #fff6ff;
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px rgb(199, 199, 199);
+}
+.matn{
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 546px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 5px rgb(199, 199, 199);
+    padding-left: 10px;
+}
+.plus{
+    margin-left: 11px;
+    margin-top: 25px;
+    width: 40px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    background-color: #B52AC8;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+.select01{
+    margin-left: 25px;
+    margin-top: 20px;
+    height: 32px;
+    width: 298px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 5px rgb(199, 199, 199);
+}
+.select02{
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 32px;
+    width: 297px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 5px rgb(199, 199, 199);
+}
+.btns{
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 420px;
+}
+.btns button{
+    margin-left: 5px;
+    border-radius: 10px;
+    border: 0.5px solid grey;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btns button:active{
+    background-color: black;
+    color: white;
+}
+.container{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 330px;
+    font-family: sans-serif;
+    font-size: 16px;
+    display: none;
+}
+.table {
+  border-collapse: separate;
+  border-spacing: 80px 10px;
+}
+.table th {
+  padding: 8px 12px;
+  font-weight: 600;
+  text-align: center;
+}
+.dalete{
+    margin-left: 18px;
+    cursor: pointer;
+}
+/* 🔧 TUZATMA BLOKLAR — layoutni barqarorlashtirish */
+
+/* 📱 Telefonlar uchun (≤600px) */
+@media screen and (max-width: 600px) {
+    /* 🔘 Light/Night tugma — input tagiga kirib ketmasin */
+    .textbtn_01 {
+        position: relative;
+        margin-top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+
+    /* 📥 Inputs div pastga tushgan, unga joy ochamiz */
+    .inputs {
+        margin-top: 220px;
+        padding-bottom: 20px;
+    }
+
+    /* 📋 Jadval (table) markazga chiqsin */
+    .container {
+        display: block;
+        margin: 550px auto 40px;
+        width: 95%;
+        text-align: center;
+    }
+
+    .table {
+        border-spacing: 10px 5px;
+        width: 100%;
+    }
+
+    .table th, .table td {
+        text-align: center;
+        padding: 6px;
+        word-wrap: break-word;
+    }
+}
+
+/* 💻 Planshetlar uchun (601–900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* 🌙 Light/Night tugma — o‘ngga chiqib ketmasin */
+    .textbtn_01 {
+        position: absolute;
+        right: 30px;
+        top: 100px;
+        transform: none;
+        margin-left: 0;
+    }
+
+    /* 📋 Jadvalni chapdan markazga yaqinlashtiramiz */
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
+
+    .table {
+        border-spacing: 40px 8px;
+    }
+}
